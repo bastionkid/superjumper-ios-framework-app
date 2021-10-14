@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,9 +23,8 @@
 		22DBADDF26BD81DD0073846F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DBADDE26BD81DD0073846F /* CoreGraphics.framework */; };
 		22DBADE126BD81EE0073846F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DBADE026BD81EE0073846F /* AudioToolbox.framework */; };
 		22DBADE326BD81F80073846F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DBADE226BD81F80073846F /* AVFoundation.framework */; };
-		22DBAE1526BDBCAE0073846F /* data in Resources */ = {isa = PBXBuildFile; fileRef = 22DBAE1426BDBCAE0073846F /* data */; };
-		22FD69AC26DCD78E00D0AB5B /* SuperJumperFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22FD69AB26DCD78E00D0AB5B /* SuperJumperFramework.framework */; };
-		22FD69AD26DCD79500D0AB5B /* SuperJumperFramework.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 22FD69AB26DCD78E00D0AB5B /* SuperJumperFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CFE7C7BA271816A800D1CC5B /* SuperJumperFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFE7C7B9271816A800D1CC5B /* SuperJumperFramework.framework */; platformFilter = ios; };
+		CFE7C7BB271816AD00D1CC5B /* SuperJumperFramework.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = CFE7C7B9271816A800D1CC5B /* SuperJumperFramework.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +51,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				22FD69AD26DCD79500D0AB5B /* SuperJumperFramework.framework in Copy Frameworks */,
+				CFE7C7BB271816AD00D1CC5B /* SuperJumperFramework.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,8 +83,7 @@
 		22DBADDE26BD81DD0073846F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		22DBADE026BD81EE0073846F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		22DBADE226BD81F80073846F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		22DBAE1426BDBCAE0073846F /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = data; sourceTree = "<group>"; };
-		22FD69AB26DCD78E00D0AB5B /* SuperJumperFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SuperJumperFramework.framework; sourceTree = "<group>"; };
+		CFE7C7B9271816A800D1CC5B /* SuperJumperFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SuperJumperFramework.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +93,7 @@
 			files = (
 				22DBADE326BD81F80073846F /* AVFoundation.framework in Frameworks */,
 				22DBADE126BD81EE0073846F /* AudioToolbox.framework in Frameworks */,
-				22FD69AC26DCD78E00D0AB5B /* SuperJumperFramework.framework in Frameworks */,
+				CFE7C7BA271816A800D1CC5B /* SuperJumperFramework.framework in Frameworks */,
 				22DBADDF26BD81DD0073846F /* CoreGraphics.framework in Frameworks */,
 				22DBADDD26BD81D30073846F /* QuartzCore.framework in Frameworks */,
 				22DBADDB26BD81210073846F /* OpenAL.framework in Frameworks */,
@@ -124,7 +122,6 @@
 		22DBAD6326BD4A620073846F = {
 			isa = PBXGroup;
 			children = (
-				22DBAE1426BDBCAE0073846F /* data */,
 				22DBAD6E26BD4A620073846F /* Test */,
 				22DBAD8D26BD4A640073846F /* TestTests */,
 				22DBAD9826BD4A650073846F /* TestUITests */,
@@ -181,7 +178,6 @@
 		22DBADD526BD80250073846F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				22FD69AB26DCD78E00D0AB5B /* SuperJumperFramework.framework */,
 				22DBADE226BD81F80073846F /* AVFoundation.framework */,
 				22DBADE026BD81EE0073846F /* AudioToolbox.framework */,
 				22DBADDE26BD81DD0073846F /* CoreGraphics.framework */,
@@ -189,6 +185,7 @@
 				22DBADDA26BD81210073846F /* OpenAL.framework */,
 				22DBADD826BD80EE0073846F /* UIKit.framework */,
 				22DBADD626BD80260073846F /* OpenGLES.framework */,
+				CFE7C7B9271816A800D1CC5B /* SuperJumperFramework.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -296,7 +293,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22DBAE1526BDBCAE0073846F /* data in Resources */,
 				22DBAD8226BD4A640073846F /* LaunchScreen.storyboard in Resources */,
 				22DBAD7F26BD4A640073846F /* Assets.xcassets in Resources */,
 				22DBAD7A26BD4A620073846F /* Main.storyboard in Resources */,

@@ -14,30 +14,35 @@
 
 @implementation AppDelegate
 
-IOSGameLauncher* launcher;
+RoboGameContainer* gameView;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    launcher = [IOSGameLauncher instance];
-    [launcher didFinishLaunching:application];
-    [SuperJumperFrameworkDemo hello];
-    // Override point for customization after application launch.
+    NSString* fw = @"com.badlogicgames.superjumper.framework";
+    NSString* clazz = @"com.badlogicgames.superjumper.framework.SuperJumper";
+    
+    gameView = [RoboGameContainer newInstance:fw classname:clazz];
+    
+    self.window.rootViewController = (UIViewController *)gameView;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
-- (void)applicationWillEnterForeground:(UIApplication *)application {
-    [launcher willEnterForeground:application];
-}
+//- (void)applicationWillEnterForeground:(UIApplication *)application {
+//    [gameView viewWillAppear:NO];
+//}
 
-- (void)applicationDidBecomeActive:(UIApplication *)application {
-    [launcher didBecomeActive:application];
-}
+//- (void)applicationDidBecomeActive:(UIApplication *)application {
+//    [gameView viewDidAppear:NO];
+//}
 
-- (void)applicationWillResignActive:(UIApplication *)application {
-    [launcher willResignActive:application];
-}
+//- (void)applicationWillResignActive:(UIApplication *)application {
+//    [gameView viewWillDisappear:NO];
+//}
 
-- (void)applicationWillTerminate:(UIApplication *)application {
-    [launcher willTerminate:application];
-}
+
+//- (void)applicationWillTerminate:(UIApplication *)application {
+//    [gameView viewDidDisappear:NO];
+//}
 
 @end
