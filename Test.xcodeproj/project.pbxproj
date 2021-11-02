@@ -16,15 +16,14 @@
 		22DBAD8526BD4A640073846F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DBAD8426BD4A640073846F /* main.m */; };
 		22DBAD8F26BD4A640073846F /* TestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DBAD8E26BD4A640073846F /* TestTests.m */; };
 		22DBAD9A26BD4A650073846F /* TestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DBAD9926BD4A650073846F /* TestUITests.m */; };
-		22DBADD726BD80260073846F /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DBADD626BD80260073846F /* OpenGLES.framework */; };
 		22DBADD926BD80EE0073846F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DBADD826BD80EE0073846F /* UIKit.framework */; };
 		22DBADDB26BD81210073846F /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DBADDA26BD81210073846F /* OpenAL.framework */; };
 		22DBADDD26BD81D30073846F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DBADDC26BD81D30073846F /* QuartzCore.framework */; };
 		22DBADDF26BD81DD0073846F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DBADDE26BD81DD0073846F /* CoreGraphics.framework */; };
 		22DBADE126BD81EE0073846F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DBADE026BD81EE0073846F /* AudioToolbox.framework */; };
 		22DBADE326BD81F80073846F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DBADE226BD81F80073846F /* AVFoundation.framework */; };
-		CFE7C7BA271816A800D1CC5B /* SuperJumperFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFE7C7B9271816A800D1CC5B /* SuperJumperFramework.framework */; platformFilter = ios; };
-		CFE7C7BB271816AD00D1CC5B /* SuperJumperFramework.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = CFE7C7B9271816A800D1CC5B /* SuperJumperFramework.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CF099AF52730F6E400BF1BF7 /* Poker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF099AF42730F6E400BF1BF7 /* Poker.framework */; platformFilter = ios; };
+		CF099AF62730F6F000BF1BF7 /* Poker.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = CF099AF42730F6E400BF1BF7 /* Poker.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +50,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CFE7C7BB271816AD00D1CC5B /* SuperJumperFramework.framework in Copy Frameworks */,
+				CF099AF62730F6F000BF1BF7 /* Poker.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -76,14 +75,13 @@
 		22DBAD9526BD4A650073846F /* TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22DBAD9926BD4A650073846F /* TestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestUITests.m; sourceTree = "<group>"; };
 		22DBAD9B26BD4A650073846F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		22DBADD626BD80260073846F /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		22DBADD826BD80EE0073846F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		22DBADDA26BD81210073846F /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		22DBADDC26BD81D30073846F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		22DBADDE26BD81DD0073846F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		22DBADE026BD81EE0073846F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		22DBADE226BD81F80073846F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		CFE7C7B9271816A800D1CC5B /* SuperJumperFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SuperJumperFramework.framework; sourceTree = "<group>"; };
+		CF099AF42730F6E400BF1BF7 /* Poker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Poker.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,13 +89,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF099AF52730F6E400BF1BF7 /* Poker.framework in Frameworks */,
 				22DBADE326BD81F80073846F /* AVFoundation.framework in Frameworks */,
 				22DBADE126BD81EE0073846F /* AudioToolbox.framework in Frameworks */,
-				CFE7C7BA271816A800D1CC5B /* SuperJumperFramework.framework in Frameworks */,
 				22DBADDF26BD81DD0073846F /* CoreGraphics.framework in Frameworks */,
 				22DBADDD26BD81D30073846F /* QuartzCore.framework in Frameworks */,
 				22DBADDB26BD81210073846F /* OpenAL.framework in Frameworks */,
-				22DBADD726BD80260073846F /* OpenGLES.framework in Frameworks */,
 				22DBADD926BD80EE0073846F /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -184,8 +181,7 @@
 				22DBADDC26BD81D30073846F /* QuartzCore.framework */,
 				22DBADDA26BD81210073846F /* OpenAL.framework */,
 				22DBADD826BD80EE0073846F /* UIKit.framework */,
-				22DBADD626BD80260073846F /* OpenGLES.framework */,
-				CFE7C7B9271816A800D1CC5B /* SuperJumperFramework.framework */,
+				CF099AF42730F6E400BF1BF7 /* Poker.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
